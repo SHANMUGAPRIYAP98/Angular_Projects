@@ -1,0 +1,22 @@
+{
+  "fraudPay": [
+    {
+      "id": 1,
+      "banCurr": "INR",
+      "amtLimit": 100000,
+      "blockAcc": 31332456789012,
+      "date": "2021-03-03",
+      "time": "18:43",
+      "status": "Success"
+    },
+    {
+      "id": 2,
+      "banCurr": "SGD",
+      "amtLimit": 1000000,
+      "blockAcc": 313324567812312,
+      "date": "2019-01-12",
+      "time": "21:46",
+      "status": "Success"
+    }
+  ]
+}

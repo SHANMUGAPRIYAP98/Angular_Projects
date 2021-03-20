@@ -1,0 +1,30 @@
+<html>
+    <head><title>{{title}}</title></head>
+    <body>
+        <div>
+        <fieldset>
+            <legend>Payment Service</legend>
+            <form #payForm="ngForm" >
+                <table>
+                <tr><td>Enter Id</td><td><input type="number" name="id" [(ngModel)]="payment.id"></td></tr>
+                <tr><td>Enter Customer Id</td><td><input type="number" name="cid" [(ngModel)]="payment.cid"></td></tr>
+                <tr><td>Enter Payment Amount </td><td><input type="number" name="pamt" [(ngModel)]="payment.payAmt"></td></tr>
+                <tr><td>Select Currency</td><td><select name="curr" [(ngModel)]="payment.curr"><option>Select Currency</option><option *ngFor="let c of currency">{{c}}</option></select></td></tr>
+                <tr><td>Enter From Account No</td><td><input type="number" name="facc" [(ngModel)]="payment.fromAcc"></td></tr>
+                <tr><td>Enter To Account No </td><td><input type="number" name="tacc" [(ngModel)]="payment.toAcc"></td></tr>
+                <tr><td>Enter Beneficiary Account No</td><td><input type="number" name="bacc" [(ngModel)]="payment.beneAcc"></td></tr>
+                <tr><td>Enter Bank Charges</td><td><input type="number" name="bchar" [(ngModel)]="payment.bankChar"></td></tr>
+                <tr><td  colspan="2"><input type="submit"value="payment data" (click)="onPaymentData()"></td><td><input type="submit"value="get payment data" (click)="getData()" style="margin-left:-250px;"></td></tr>
+            </table>
+            </form>
+        </fieldset>
+    </div>
+    <div>
+        <h3 align="center">Payment Payload Data</h3>
+        <table border="1">
+            <tr><th>ID</th><th>CUSTOMER ID</th><th>PAYMENT AMOUNT</th><th>CURRENCY</th><th>FROM ACCOUNT NO</th><th>TO ACCOUNT NO</th><th>BENEFICIARY ACCOUNT NO</th><th>BANK CHARGES</th></tr>
+            <tr *ngFor="let p of pay"><td *ngFor="let col of fields">{{p[col]}}</td></tr>
+        </table>
+    </div>
+    </body>
+</html>

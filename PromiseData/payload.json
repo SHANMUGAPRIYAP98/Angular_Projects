@@ -1,0 +1,64 @@
+{
+  "PaymentPayload": [
+    {
+      "id": 1,
+      "cid": 101,
+      "payAmt": 2000000,
+      "curr": "INR",
+      "fromAcc": 31231450123412,
+      "toAcc": 31334567123423,
+      "beneAcc": 8976543210,
+      "bankChar": 2500
+    },
+    {
+      "id": 2,
+      "cid": 102,
+      "payAmt": 500000,
+      "curr": "INR",
+      "fromAcc": 31231450123412,
+      "toAcc": 31334567123423,
+      "beneAcc": 8976543210,
+      "bankChar": 200
+    },
+    {
+      "id": 3,
+      "cid": 103,
+      "payAmt": 1000,
+      "curr": "USD",
+      "fromAcc": 31231123145689,
+      "toAcc": 31554567123423,
+      "beneAcc": 9876543210,
+      "bankChar": 200
+    },
+    {
+      "id": 4,
+      "cid": 104,
+      "payAmt": 10000,
+      "curr": "INR",
+      "fromAcc": 31231123145622,
+      "toAcc": 31554567123444,
+      "beneAcc": 9876543222,
+      "bankChar": 100
+    },
+    {
+      "id": 5,
+      "cid": 105,
+      "payAmt": 500,
+      "curr": "EUR",
+      "fromAcc": 31231123141234,
+      "toAcc": 31554567127890,
+      "beneAcc": 8765451234,
+      "bankChar": 20
+    },
+    {
+      "id": 6,
+      "cid": 106,
+      "payAmt": 50000,
+      "curr": "INR",
+      "fromAcc": 3123145678912345,
+      "toAcc": 3123145678912346,
+      "beneAcc": 7823456789,
+      "bankChar": 2000
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "country": [
+    {
+      "id": 1,
+      "cusType": "Loyal customers",
+      "creditType": "Visa",
+      "curr": "INR",
+      "counName": "INDIA",
+      "cityName": "CHENNAI"
+    },
+    {
+      "id": 2,
+      "cusType": "Impulse customers",
+      "creditType": "Visa",
+      "curr": "USD",
+      "counName": "USA",
+      "cityName": "NEW YORK"
+    },
+    {
+      "id": 3,
+      "cusType": "Need-based customers",
+      "creditType": "American Express",
+      "curr": "EUR",
+      "counName": "ESTONIA",
+      "cityName": "TARTU"
+    },
+    {
+      "id": 4,
+      "cusType": "Wandering customers",
+      "creditType": "American Express",
+      "curr": "SGD",
+      "counName": "SINGAPORE",
+      "cityName": "GEORGE TOWN"
+    },
+    {
+      "id": 5,
+      "cusType": "Discount customers",
+      "creditType": "MasterCard",
+      "curr": "CNY",
+      "counName": "CONGO",
+      "cityName": "GEORGE TOWN"
+    },
+    {
+      "id": 6,
+      "cusType": "Discount customers",
+      "creditType": "American Express",
+      "curr": "IRR",
+      "counName": "IRAN",
+      "cityName": "SHIRAZ"
+    },
+    {
+      "id": 7,
+      "cusType": "Loyal customers",
+      "creditType": "Visa",
+      "curr": "KHR",
+      "counName": "NIGERIA",
+      "cityName": "LAGOS"
+    },
+    {
+      "id": 8,
+      "cusType": "Need-based customers",
+      "creditType": "American Express",
+      "curr": "RUB",
+      "counName": "RUSSIA",
+      "cityName": "MOSCOW"
+    },
+    {
+      "id": 9,
+      "cusType": "Impulse customers",
+      "creditType": "Visa",
+      "curr": "USD",
+      "counName": "USA",
+      "cityName": "NEW YORK"
+    }
+  ]
+}

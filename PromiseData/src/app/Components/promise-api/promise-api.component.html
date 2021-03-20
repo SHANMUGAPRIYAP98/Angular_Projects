@@ -1,0 +1,62 @@
+<html>
+  <head><title>{{title}}</title></head>
+  <body>
+ <div>
+      
+      <fieldset>
+        <legend>Country Data</legend>
+        <table>
+          <tr><td>Country Id : </td><td><input type="number" [(ngModel)]="id"></td></tr>
+          <tr><td>Select Customer Type : </td><td><select [(ngModel)]="cusType">
+            <option>Select Customer</option>
+            <option *ngFor="let cust of custTypes">{{cust}}</option>
+          </select></td></tr>
+          <tr><td>Select Credit Card Type : </td><td><select  [(ngModel)]="creditType"l>
+            <option>Select Credit Card</option>
+            <option *ngFor="let credit of creditTypes">{{credit}}</option>
+          </select></td></tr>
+          <tr><td>Select Currency : </td><td><select [(ngModel)]="curr" >
+            <option>Select Currency Type</option>
+            <option *ngFor="let curr of currency">{{curr}}</option>
+          </select></td></tr>
+          <tr><td>Select Country : </td><td><select [(ngModel)]="counName" >
+            <option>Select Country Name</option>
+            <option *ngFor="let coun of counList">{{coun}}</option>
+          </select></td></tr>
+          <tr><td>Select City : </td><td><select  [(ngModel)]="cityName" >
+            <option>Select City Name</option>
+            <option *ngFor="let city of cityList">{{city}}</option>
+          </select></td></tr>
+          <tr><td><input type="submit" value="submit data" (click)="onButtonClick()"></td>
+          <td><input type="submit" value="fetch data" (click)="onFetchData()"></td></tr>
+      
+        </table>
+      </fieldset>
+      <div>
+        <table>
+          <tr><td>Enter Country Id : </td><td><input type="number" [(ngModel)]="cid"></td><td><input type="submit" value="get Data" (click)="onGetConData()"></td></tr>
+        </table>
+      </div>
+    
+    </div>
+    <div *ngIf="isClicked">
+      <h2 align="center">Promise Api Data</h2>
+      <table border="1" align="center">
+        <tr><th>Country Id</th><th>Customer Type</th><th>Credit Card Type</th><th>Currency</th><th>Country Name</th><th>City Name</th></tr>
+        <tr *ngFor="let c of con"><td *ngFor="let col of fields ">{{c[col]}}</td></tr>
+        
+      </table>
+   
+    </div>
+    <div>
+      <h2 align="center">Promise Api Data</h2>
+      <table border="1" align="center">
+        <tr><th>Country Id</th><th>Customer Type</th><th>Credit Card Type</th><th>Currency</th><th>Country Name</th><th>City Name</th></tr>
+        <tr *ngFor="let ct of count"><td>{{ct.id}}</td><td>{{ct.cusType}}</td><td>{{ct.creditType}}</td><td>{{ct.curr}}</td><td>{{ct.counName}}</td><td>{{ct.cityName}}</td></tr>
+        
+      </table>
+   
+    </div>
+   
+  </body>
+</html>

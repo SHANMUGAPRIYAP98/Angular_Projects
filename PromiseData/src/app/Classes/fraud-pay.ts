@@ -1,0 +1,19 @@
+export class FraudPay {
+    id:number;
+    banCurr:string;
+    amtLimit:number;
+    blockAcc:number;
+    date:string;
+    time:string;
+    status:string;
+    constructor(id:number,banCurr:string,amtLimit:number,blockAcc:number,date:string,time:string,status:string)
+    {
+        this.id=id;
+        this.banCurr=banCurr;
+        this.amtLimit=amtLimit;
+        this.blockAcc=blockAcc;
+        this.date=date;
+        this.time=time;
+        this.status=status;
+    }
+}

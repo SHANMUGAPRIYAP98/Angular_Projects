@@ -1,0 +1,15 @@
+<html>
+  <head><title>{{title}}</title></head>
+  <body>
+    <div>
+      <table>
+        <tr><td><input type="submit" value="Payment-Payload" (click)="onPaymentBut()"></td><td><input type="submit" value="Promise-API" (click)="onPromiseBut()"></td>
+          <td><input type="submit" value="Fraudulent Payment" (click)="onFraudPayBut()"></td>
+          <td><input type="submit" value="Observable Api" (click)="onObservableBut()"></td></tr>
+      </table>
+    </div>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </body>
+</html>

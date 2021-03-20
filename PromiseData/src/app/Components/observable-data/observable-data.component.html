@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td><input type="submit" value="Fetch Currencies" (click)="onFetchCurr()"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="get Incorrect Data" (click)="onIncorrectData()"></td>
+        </tr>
+        <tr>
+            <td>Search Banned Currency/Date/Time</td>
+            <td><input type="text" [(ngModel)]="key1"></td>
+        </tr>
+        <tr>
+            <td>Search Amount Limit/Blocked Account</td>
+            <td><input type="text" [(ngModel)]="key2"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="search data" (click)="onSearch()"></td>
+        </tr>
+    </table>
+    <div *ngIf="isButClicked1">
+        <h2 align="center">Fetching Fraudulent Payment Data</h2>
+        <table border="1" align="center">
+            <tr><th>BANNED CURRENCY</th><th>AMOUNT LIMIT</th><th>BLOCK ACCOUNT</th><th>DATE</th><th>TIME</th><th>STATUS</th></tr>
+            <tr *ngFor="let fp of fpay"><td>{{fp.banCurr}}</td><td>{{fp.amtLimit}}</td><td>{{fp.blockAcc}}</td><td>{{fp.date}}</td><td>{{fp.time}}</td><td>{{fp.status}}</td></tr>
+        </table>
+    </div>
+    <div *ngIf="isButClicked2">
+        <h2 align="center">Fetching Incorrect Fraudulent Payment Data</h2>
+        <table border="1" align="center">
+            <tr><th>ID</th><th>BANNED CURRENCY</th><th>AMOUNT LIMIT</th><th>BLOCK ACCOUNT</th><th>DATE</th><th>TIME</th><th>STATUS</th></tr>
+            <tr *ngFor="let fp of fpay"><td>{{fp.id}}</td><td>{{fp.banCurr}}</td><td>{{fp.amtLimit}}</td><td>{{fp.blockAcc}}</td><td>{{fp.date}}</td><td>{{fp.time}}</td><td>{{fp.status}}</td>
+            <td><input type="submit" value="remove" (click)="removeData(fp.id)"></td></tr>
+        </table>
+    </div>
+</body>
+
+</html>
